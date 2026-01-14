@@ -1,24 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimasyonluButton" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udr-98-aXM">
+                                <rect key="frame" x="282" y="713" width="71" height="71"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="Q1f-6N-ioj"/>
+                                    <constraint firstAttribute="width" constant="71" id="WCY-Xt-VRY"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="fabMain">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="button1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ad6-1f-RFw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmf-zs-yxF">
+                                <rect key="frame" x="282" y="611" width="71" height="71"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="4Y2-fZ-Uwc"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="71" id="Zbz-1h-nFe"/>
+                                    <constraint firstAttribute="width" constant="71" id="s9L-Wd-vl5"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="fabIkinci">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="button2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HaF-7r-WNN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pR-XL-hkz">
+                                <rect key="frame" x="282" y="510" width="71" height="71"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="71" id="CTm-9V-W4L"/>
+                                    <constraint firstAttribute="width" constant="71" id="jKk-Qx-MRP"/>
+                                    <constraint firstAttribute="height" constant="71" id="qxI-dy-RCV"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="fabBirinci">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="button3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dpK-kl-XJx"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6pR-XL-hkz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="282" id="EWt-6V-tE6"/>
+                            <constraint firstItem="udr-98-aXM" firstAttribute="top" secondItem="pmf-zs-yxF" secondAttribute="bottom" constant="31" id="Fm1-VL-azu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6pR-XL-hkz" secondAttribute="trailing" constant="40" id="KVR-4d-gU1"/>
+                            <constraint firstItem="6pR-XL-hkz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="392" id="b2u-65-bj9"/>
+                            <constraint firstItem="6pR-XL-hkz" firstAttribute="leading" secondItem="pmf-zs-yxF" secondAttribute="leading" id="bpJ-n6-uPA"/>
+                            <constraint firstItem="udr-98-aXM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="cUc-Ma-zy3"/>
+                            <constraint firstItem="pmf-zs-yxF" firstAttribute="top" secondItem="6pR-XL-hkz" secondAttribute="bottom" constant="30" id="da8-ae-LAx"/>
+                            <constraint firstItem="pmf-zs-yxF" firstAttribute="leading" secondItem="udr-98-aXM" secondAttribute="leading" id="ekL-qb-3pw"/>
+                            <constraint firstItem="6pR-XL-hkz" firstAttribute="trailing" secondItem="pmf-zs-yxF" secondAttribute="trailing" id="x94-m4-4oD"/>
+                            <constraint firstItem="pmf-zs-yxF" firstAttribute="trailing" secondItem="udr-98-aXM" secondAttribute="trailing" id="zv1-cN-4bZ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button1" destination="udr-98-aXM" id="Eb3-vd-naz"/>
+                        <outlet property="button2" destination="pmf-zs-yxF" id="PfC-ac-pxp"/>
+                        <outlet property="button3" destination="6pR-XL-hkz" id="cgv-n2-epO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="138.1679389312977" y="130.98591549295776"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="fabBirinci" width="36" height="36"/>
+        <image name="fabIkinci" width="36" height="36"/>
+        <image name="fabMain" width="36" height="36"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
